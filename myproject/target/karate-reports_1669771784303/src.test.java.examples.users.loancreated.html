@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("8473f7a8-1746-4cbd-9846-7b1ac819e668",{name:"salma.syahna"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:"intellij:1.5.1.206"});
+  }
+});
+</script>
+  
+    <title>src.test.java.examples.users.loancreated</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-11-30 08:29:19 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[4:128]"><span>[4:128]</span> <span>submit loan draft</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/users/loancreated.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">loan creation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:128]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:128]</span>
+                <span class="scenario-name">submit loan draft</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>16059</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:128]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">08:29:03.385 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/ext/loan-draft/submit/sg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header member-uuid = &#39;58e7f63b-3228-406f-9114-ca91172c5629&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header username = &#39;qa+test.testing@fundingsocieties.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header country-id = &#39;sg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">48</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.135">{
+          &quot;consentToBeContactedThroughWhatsapp&quot;:true,
+          &quot;utm&quot;:{},
+          &quot;appliedAmount&quot;:100000,
+          &quot;appliedTenor&quot;:6,
+          &quot;financingPurpose&quot;:&quot;business-expansion&quot;,
+          &quot;personalDataConsent&quot;:true,
+          &quot;company&quot;:
+{
+  &quot;name&quot;:&quot;test&quot;,
+  &quot;uen&quot;:&quot;13234245&quot;,
+  &quot;typeId&quot;:9,
+  &quot;businessIndustryId&quot;:29,
+  &quot;annualRevenue&quot;:100000,
+  &quot;bank&quot;:{
+    &quot;name&quot;:&quot;CIMB (Singapore)&quot;,
+    &quot;accountNumber&quot;:&quot;2344556&quot;},
+  &quot;documents&quot;:[
+    {
+      &quot;name&quot;:&quot;BANK_STATEMENT_file&quot;,
+      &quot;id&quot;:&quot;2921107&quot;,
+      &quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,
+      &quot;type&quot;:&quot;BANK_STATEMENT&quot;
+    }]
+ },
+ &quot;borrower&quot;:{
+   &quot;fullname&quot;:&quot;testt&quot;,
+   &quot;email&quot;:&quot;qa+test.testt@fundingsocieties.com&quot;,
+   &quot;icNumber&quot;:&quot;S3611066F&quot;,
+   &quot;dateOfBirth&quot;:&quot;1995-11-01&quot;,
+   &quot;isCitizen&quot;:true,
+   &quot;documents&quot;:[
+     {
+       &quot;name&quot;:&quot;NRIC_FRONT_image (7).png&quot;,
+       &quot;id&quot;:&quot;2921107&quot;,
+       &quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,
+       &quot;type&quot;:&quot;NRIC_FRONT&quot;
+     },
+     {
+       &quot;name&quot;:&quot;CBS_image (6).png&quot;,
+       &quot;id&quot;:&quot;2921107&quot;,
+       &quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,
+       &quot;type&quot;:&quot;CBS&quot;
+     },
+     {
+       &quot;name&quot;:&quot;NOA_image (6).png&quot;,
+       &quot;id&quot;:&quot;2921107&quot;,
+       &quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,
+       &quot;type&quot;:&quot;NOA&quot;}]},
+  &quot;directors&quot;:[{
+    &quot;fullname&quot;:&quot;testing 123&quot;,
+    &quot;email&quot;:&quot;qa+test.testii@fundingsocieties.com&quot;,
+    &quot;mobileNumber&quot;:&quot;+657425298&quot;,
+    &quot;doesApplicantHaveConsentToShare&quot;:true,
+    &quot;isCitizen&quot;:true,
+    &quot;roles&quot;:[&quot;director&quot;],
+      &quot;documents&quot;:[{
+        &quot;name&quot;:&quot;NRIC_FRONT_NIRC Front.pdf&quot;,
+        &quot;id&quot;: &quot;2921107&quot;,
+        &quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,
+        &quot;type&quot;:&quot;NRIC_FRONT&quot;}],
+    &quot;icNumber&quot;:&quot;S8865736E&quot;}],
+          &quot;submitConsent&quot;:true}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.202">
+      <div class="step-ref passed">202</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.203">
+      <div class="step-ref passed">203</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15992</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.203">08:29:03.893 request:
+1 &gt; POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/submit/sg
+1 &gt; member-uuid: 58e7f63b-3228-406f-9114-ca91172c5629
+1 &gt; username: qa+test.testing@fundingsocieties.com
+1 &gt; country-id: sg
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1301
+1 &gt; Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;consentToBeContactedThroughWhatsapp&quot;:true,&quot;utm&quot;:{},&quot;appliedAmount&quot;:100000,&quot;appliedTenor&quot;:6,&quot;financingPurpose&quot;:&quot;business-expansion&quot;,&quot;personalDataConsent&quot;:true,&quot;company&quot;:{&quot;name&quot;:&quot;test&quot;,&quot;uen&quot;:&quot;13234245&quot;,&quot;typeId&quot;:9,&quot;businessIndustryId&quot;:29,&quot;annualRevenue&quot;:100000,&quot;bank&quot;:{&quot;name&quot;:&quot;CIMB (Singapore)&quot;,&quot;accountNumber&quot;:&quot;2344556&quot;},&quot;documents&quot;:[{&quot;name&quot;:&quot;BANK_STATEMENT_file&quot;,&quot;id&quot;:&quot;2921107&quot;,&quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,&quot;type&quot;:&quot;BANK_STATEMENT&quot;}]},&quot;borrower&quot;:{&quot;fullname&quot;:&quot;testt&quot;,&quot;email&quot;:&quot;qa+test.testt@fundingsocieties.com&quot;,&quot;icNumber&quot;:&quot;S3611066F&quot;,&quot;dateOfBirth&quot;:&quot;1995-11-01&quot;,&quot;isCitizen&quot;:true,&quot;documents&quot;:[{&quot;name&quot;:&quot;NRIC_FRONT_image (7).png&quot;,&quot;id&quot;:&quot;2921107&quot;,&quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,&quot;type&quot;:&quot;NRIC_FRONT&quot;},{&quot;name&quot;:&quot;CBS_image (6).png&quot;,&quot;id&quot;:&quot;2921107&quot;,&quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,&quot;type&quot;:&quot;CBS&quot;},{&quot;name&quot;:&quot;NOA_image (6).png&quot;,&quot;id&quot;:&quot;2921107&quot;,&quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,&quot;type&quot;:&quot;NOA&quot;}]},&quot;directors&quot;:[{&quot;fullname&quot;:&quot;testing 123&quot;,&quot;email&quot;:&quot;qa+test.testii@fundingsocieties.com&quot;,&quot;mobileNumber&quot;:&quot;+657425298&quot;,&quot;doesApplicantHaveConsentToShare&quot;:true,&quot;isCitizen&quot;:true,&quot;roles&quot;:[&quot;director&quot;],&quot;documents&quot;:[{&quot;name&quot;:&quot;NRIC_FRONT_NIRC Front.pdf&quot;,&quot;id&quot;:&quot;2921107&quot;,&quot;uuid&quot;:&quot;094af6c0-74b0-4211-82c9-9361f85def0b&quot;,&quot;type&quot;:&quot;NRIC_FRONT&quot;}],&quot;icNumber&quot;:&quot;S8865736E&quot;}],&quot;submitConsent&quot;:true}
+
+08:29:19.488 response time in milliseconds: 15591
+1 &lt; 504
+1 &lt; Date: Wed, 30 Nov 2022 01:29:19 GMT
+1 &lt; Content-Type: text/plain
+1 &lt; Content-Length: 24
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx/1.17.10
+upstream request timeout
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.204">
+      <div class="step-ref failed">204</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.204">08:29:19.494 src/test/java/examples/users/loancreated.feature:204
+And status 200
+status code was: 504, expected: 200, response time in milliseconds: 15591, url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/submit/sg, response: 
+upstream request timeout
+src/test/java/examples/users/loancreated.feature:204
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("8473f7a8-1746-4cbd-9846-7b1ac819e668",{name:"salma.syahna"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:"intellij:1.5.1.206"});
+  }
+});
+</script>
+  
+    <title>src.test.java.examples.users.loancreated</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-11-24 10:06:22 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>loan creation</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/users/loancreated.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">loan creation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">loan creation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>31</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://service-mesh-ingress-uat.fundingasiagroup.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">10:06:22.394 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>path &#39;ext/loan-draft/submit/sg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header member-uuid = &#39;137abd5a-6cf2-4820-bd31-b8357a34d7b2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header username = &#39;qa+test.testing@fundingsocieties.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header country-id = &#39;sg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell failed">27</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.11">&quot;utm&quot;: {
+  &quot;utmCampaign&quot;: &quot;string&quot;,
+  &quot;utmContent&quot;: &quot;string&quot;,
+  &quot;utmMedium&quot;: &quot;string&quot;,
+  &quot;utmSource&quot;: &quot;string&quot;,
+  &quot;utmTerm&quot;: &quot;string&quot;
+},
+&quot;appliedAmount&quot;: 100000,
+&quot;appliedTenor&quot;: 12,
+&quot;referralCode&quot;: &quot;null&quot;,
+&quot;personalDataConsent&quot;: true,
+&quot;consentToBeContactedThroughWhatsapp&quot;: true,
+&quot;submitConsent&quot;: true,
+&quot;borrower&quot;: {
+  &quot;fullname&quot;: &quot;testing 123&quot;,
+  &quot;dateOfBirth&quot;: &quot;1996-11-23&quot;,
+  &quot;documents&quot;: [],
+  &quot;email&quot;: &quot;qa+test.tests@fundingsocieties.com&quot;,
+  &quot;isCitizen&quot;: true,
+  &quot;icNumber&quot;: &quot;S9453628F&quot;
+},
+&quot;directors&quot;: [
+  {
+    &quot;fullname&quot;: &quot;testing 234&quot;,
+    &quot;mobileNumber&quot;: &quot;+6289611160052&quot;,
+    &quot;roles&quot;: [
+      &quot;director&quot;
+    ],
+    &quot;documents&quot;: [],
+    &quot;email&quot;: &quot;qa+test.test234@fundingsocieties.com&quot;,
+    &quot;isCitizen&quot;: true,
+    &quot;icNumber&quot;: &quot;S9453627F&quot;,
+    &quot;doesApplicantHaveConsentToShare&quot;: true
+  },
+  {
+    &quot;fullname&quot;: &quot;testtt&quot;,
+    &quot;mobileNumber&quot;: &quot;+65489302&quot;,
+    &quot;roles&quot;: [
+      &quot;director&quot;
+    ],
+    &quot;documents&quot;: [],
+    &quot;email&quot;: &quot;qa+test.testt@fundingsocieties.com&quot;,
+    &quot;isCitizen&quot;: false,
+    &quot;passportNumber&quot;: &quot;R57932F&quot;,
+    &quot;doesApplicantHaveConsentToShare&quot;: true
+  }
+],
+&quot;company&quot;: {
+  &quot;name&quot;: &quot;my company&quot;,
+  &quot;typeId&quot;: 8,
+  &quot;annualRevenue&quot;: 10000,
+  &quot;documents&quot;: [],
+  &quot;businessIndustryId&quot;: 27,
+  &quot;bank&quot;: {
+    &quot;name&quot;: &quot;CIMB (Singapore)&quot;,
+    &quot;accountNumber&quot;: &quot;12344556&quot;
+  },
+  &quot;uen&quot;: &quot;1234455&quot;
+},
+&quot;financingPurpose&quot;: &quot;business-expansion&quot;
+      }</div>
+
+  
+
+  <div class="preformatted" data-parent="0.11">10:06:22.473 src/test/java/examples/users/loancreated.feature:11
+* def payload =
+&quot;&quot;&quot;
+&quot;utm&quot;: {
+  &quot;utmCampaign&quot;: &quot;string&quot;,
+  &quot;utmContent&quot;: &quot;string&quot;,
+  &quot;utmMedium&quot;: &quot;string&quot;,
+  &quot;utmSource&quot;: &quot;string&quot;,
+  &quot;utmTerm&quot;: &quot;string&quot;
+},
+&quot;appliedAmount&quot;: 100000,
+&quot;appliedTenor&quot;: 12,
+&quot;referralCode&quot;: &quot;null&quot;,
+&quot;personalDataConsent&quot;: true,
+&quot;consentToBeContactedThroughWhatsapp&quot;: true,
+&quot;submitConsent&quot;: true,
+&quot;borrower&quot;: {
+  &quot;fullname&quot;: &quot;testing 123&quot;,
+  &quot;dateOfBirth&quot;: &quot;1996-11-23&quot;,
+  &quot;documents&quot;: [],
+  &quot;email&quot;: &quot;qa+test.tests@fundingsocieties.com&quot;,
+  &quot;isCitizen&quot;: true,
+  &quot;icNumber&quot;: &quot;S9453628F&quot;
+},
+&quot;directors&quot;: [
+  {
+    &quot;fullname&quot;: &quot;testing 234&quot;,
+    &quot;mobileNumber&quot;: &quot;+6289611160052&quot;,
+    &quot;roles&quot;: [
+      &quot;director&quot;
+    ],
+    &quot;documents&quot;: [],
+    &quot;email&quot;: &quot;qa+test.test234@fundingsocieties.com&quot;,
+    &quot;isCitizen&quot;: true,
+    &quot;icNumber&quot;: &quot;S9453627F&quot;,
+    &quot;doesApplicantHaveConsentToShare&quot;: true
+  },
+  {
+    &quot;fullname&quot;: &quot;testtt&quot;,
+    &quot;mobileNumber&quot;: &quot;+65489302&quot;,
+    &quot;roles&quot;: [
+      &quot;director&quot;
+    ],
+    &quot;documents&quot;: [],
+    &quot;email&quot;: &quot;qa+test.testt@fundingsocieties.com&quot;,
+    &quot;isCitizen&quot;: false,
+    &quot;passportNumber&quot;: &quot;R57932F&quot;,
+    &quot;doesApplicantHaveConsentToShare&quot;: true
+  }
+],
+&quot;company&quot;: {
+  &quot;name&quot;: &quot;my company&quot;,
+  &quot;typeId&quot;: 8,
+  &quot;annualRevenue&quot;: 10000,
+  &quot;documents&quot;: [],
+  &quot;businessIndustryId&quot;: 27,
+  &quot;bank&quot;: {
+    &quot;name&quot;: &quot;CIMB (Singapore)&quot;,
+    &quot;accountNumber&quot;: &quot;12344556&quot;
+  },
+  &quot;uen&quot;: &quot;1234455&quot;
+},
+&quot;financingPurpose&quot;: &quot;business-expansion&quot;
+      }
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: &quot;utm&quot;: {
+02:   &quot;utmCampaign&quot;: &quot;string&quot;,
+03:   &quot;utmContent&quot;: &quot;string&quot;,
+04:   &quot;utmMedium&quot;: &quot;string&quot;,
+05:   &quot;utmSource&quot;: &quot;string&quot;,
+06:   &quot;utmTerm&quot;: &quot;string&quot;
+07: },
+08: &quot;appliedAmount&quot;: 100000,
+09: &quot;appliedTenor&quot;: 12,
+10: &quot;referralCode&quot;: &quot;null&quot;,
+11: &quot;personalDataConsent&quot;: true,
+12: &quot;consentToBeContactedThroughWhatsapp&quot;: true,
+13: &quot;submitConsent&quot;: true,
+14: &quot;borrower&quot;: {
+15:   &quot;fullname&quot;: &quot;testing 123&quot;,
+16:   &quot;dateOfBirth&quot;: &quot;1996-11-23&quot;,
+17:   &quot;documents&quot;: [],
+18:   &quot;email&quot;: &quot;qa+test.tests@fundingsocieties.com&quot;,
+19:   &quot;isCitizen&quot;: true,
+20:   &quot;icNumber&quot;: &quot;S9453628F&quot;
+21: },
+22: &quot;directors&quot;: [
+23:   {
+24:     &quot;fullname&quot;: &quot;testing 234&quot;,
+25:     &quot;mobileNumber&quot;: &quot;+6289611160052&quot;,
+26:     &quot;roles&quot;: [
+27:       &quot;director&quot;
+28:     ],
+29:     &quot;documents&quot;: [],
+30:     &quot;email&quot;: &quot;qa+test.test234@fundingsocieties.com&quot;,
+31:     &quot;isCitizen&quot;: true,
+32:     &quot;icNumber&quot;: &quot;S9453627F&quot;,
+33:     &quot;doesApplicantHaveConsentToShare&quot;: true
+34:   },
+35:   {
+36:     &quot;fullname&quot;: &quot;testtt&quot;,
+37:     &quot;mobileNumber&quot;: &quot;+65489302&quot;,
+38:     &quot;roles&quot;: [
+39:       &quot;director&quot;
+40:     ],
+41:     &quot;documents&quot;: [],
+42:     &quot;email&quot;: &quot;qa+test.testt@fundingsocieties.com&quot;,
+43:     &quot;isCitizen&quot;: false,
+44:     &quot;passportNumber&quot;: &quot;R57932F&quot;,
+45:     &quot;doesApplicantHaveConsentToShare&quot;: true
+46:   }
+47: ],
+48: &quot;company&quot;: {
+49:   &quot;name&quot;: &quot;my company&quot;,
+50:   &quot;typeId&quot;: 8,
+51:   &quot;annualRevenue&quot;: 10000,
+52:   &quot;documents&quot;: [],
+53:   &quot;businessIndustryId&quot;: 27,
+54:   &quot;bank&quot;: {
+55:     &quot;name&quot;: &quot;CIMB (Singapore)&quot;,
+56:     &quot;accountNumber&quot;: &quot;12344556&quot;
+57:   },
+58:   &quot;uen&quot;: &quot;1234455&quot;
+59: },
+60: &quot;financingPurpose&quot;: &quot;business-expansion&quot;
+61:       }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:5 Expected ; but found :
+&quot;utm&quot;: {
+     ^
+Unnamed:2:15 Expected ; but found :
+  &quot;utmCampaign&quot;: &quot;string&quot;,
+               ^
+Unnamed:3:14 Expected ; but found :
+  &quot;utmContent&quot;: &quot;string&quot;,
+              ^
+Unnamed:4:13 Expected ; but found :
+  &quot;utmMedium&quot;: &quot;string&quot;,
+             ^
+Unnamed:5:13 Expected ; but found :
+  &quot;utmSource&quot;: &quot;string&quot;,
+             ^
+Unnamed:6:11 Expected ; but found :
+  &quot;utmTerm&quot;: &quot;string&quot;
+           ^
+Unnamed:7:0 Expected eof but found }
+},
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1412)
+
+src/test/java/examples/users/loancreated.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref skipped">77</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref skipped">78</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

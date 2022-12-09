@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[1:9]","start":1670476620389,"end":1670476620557,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[1:9] 12:17:00.389-12:17:00.557 upload bank statement document 1st","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[2:23]","start":1670476620567,"end":1670476620568,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[2:23] 12:17:00.567-12:17:00.568 upload bank statement document 2nd","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[3:37]","start":1670476620576,"end":1670476620578,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[3:37] 12:17:00.576-12:17:00.578 upload bank statement document 3rd","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[4:51]","start":1670476620585,"end":1670476620586,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[4:51] 12:17:00.585-12:17:00.586 upload bank statement document 4th","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[5:65]","start":1670476620591,"end":1670476620594,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[5:65] 12:17:00.591-12:17:00.594 upload bank statement document 5th","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[6:79]","start":1670476620600,"end":1670476620602,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[6:79] 12:17:00.600-12:17:00.602 upload bank statement document 6th","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[7:93]","start":1670476620608,"end":1670476620610,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[7:93] 12:17:00.608-12:17:00.610 upload KTP document","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfileElevate[8:107]","start":1670476620617,"end":1670476620618,"title":"src\/test\/java\/examples\/users\/uploadfileElevate[8:107] 12:17:00.617-12:17:00.618 upload NPWP document","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

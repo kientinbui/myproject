@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("8473f7a8-1746-4cbd-9846-7b1ac819e668",{name:"salma.syahna"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:"intellij:1.5.1.206"});
+  }
+});
+</script>
+  
+    <title>src.test.java.examples.users.loancreated</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-12-08 11:56:38 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[6:217]"><span>[6:217]</span> <span>submit loan draft</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/users/loancreated.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">loan creation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:217]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:217]</span>
+                <span class="scenario-name">submit loan draft</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>15888</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:217]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:217]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:56:22.514 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:217]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* call read(&#39;classpath:examples/users/login.feature&#39;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;salma.syahna@fundingsocieties.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:217]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uuid = &#39;c8e3372b-204d-4fcb-bc13-bd36d9136254&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.219">
+      <div class="step-ref passed">219</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/ext/loan-draft/submit/sg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.220">
+      <div class="step-ref passed">220</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header member-uuid = uuid</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.221">
+      <div class="step-ref passed">221</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header username = username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.222">
+      <div class="step-ref passed">222</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header country-id = &#39;sg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.225">
+      <div class="step-ref passed">225</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.225">{
+  &quot;utm&quot;: {},
+  &quot;company&quot;: {
+    &quot;uen&quot;: &quot;146758900&quot;,
+    &quot;name&quot;: &quot;my company is mine&quot;,
+    &quot;typeId&quot;: 10,
+    &quot;annualRevenue&quot;: 2000000,
+    &quot;businessIndustryId&quot;: 32,
+    &quot;bank&quot;: { &quot;name&quot;: &quot;Bank of Singapore&quot;, &quot;accountNumber&quot;: &quot;12345678&quot; },
+    &quot;documents&quot;: [
+      {
+        &quot;name&quot;: &quot;BANK_STATEMENT_image.png&quot;,
+        &quot;id&quot;: &quot;2938765&quot;,
+        &quot;uuid&quot;: &quot;c013ec9f-d009-43c3-8a08-ea82421daccf&quot;,
+        &quot;type&quot;: &quot;BANK_STATEMENT&quot;
+      }
+    ]
+  },
+  &quot;borrower&quot;: {
+    &quot;email&quot;: &quot;qa+test.ava@fundingsocieties.com&quot;,
+    &quot;fullname&quot;: &quot;ava testing 2nd&quot;,
+    &quot;icNumber&quot;: &quot;S3947271F&quot;,
+    &quot;documents&quot;: [
+      {
+        &quot;id&quot;: &quot;2938758&quot;,
+        &quot;name&quot;: &quot;NRIC_FRONT_image (8).png&quot;,
+        &quot;type&quot;: &quot;NRIC_FRONT&quot;,
+        &quot;uuid&quot;: &quot;e0773abc-e25d-4577-b909-15337545d646&quot;
+      },
+      {
+        &quot;id&quot;: &quot;2938760&quot;,
+        &quot;name&quot;: &quot;CBS_image (8).png&quot;,
+        &quot;type&quot;: &quot;CBS&quot;,
+        &quot;uuid&quot;: &quot;fa545b21-20a0-4bbf-910a-6766e8f6fd3f&quot;
+      },
+      {
+        &quot;id&quot;: &quot;2938759&quot;,
+        &quot;name&quot;: &quot;NOA_image (8).png&quot;,
+        &quot;type&quot;: &quot;NOA&quot;,
+        &quot;uuid&quot;: &quot;c9b6671b-8a3a-4cbe-ad00-cfa25062c56f&quot;
+      }
+    ],
+    &quot;isCitizen&quot;: true,
+    &quot;dateOfBirth&quot;: &quot;1995-12-30&quot;
+  },
+  &quot;directors&quot;: [],
+  &quot;appliedTenor&quot;: 5,
+  &quot;appliedAmount&quot;: 100000,
+  &quot;financingPurpose&quot;: &quot;business-expansion&quot;,
+  &quot;personalDataConsent&quot;: true,
+  &quot;consentToBeContactedThroughWhatsapp&quot;: true,
+  &quot;submitConsent&quot;: true
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.283">
+      <div class="step-ref passed">283</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.284">
+      <div class="step-ref passed">284</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15822</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.284">11:56:22.926 request:
+1 &gt; POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/submit/sg
+1 &gt; member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 &gt; username: salma.syahna@fundingsocieties.com
+1 &gt; country-id: sg
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1001
+1 &gt; Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;utm&quot;:{},&quot;company&quot;:{&quot;uen&quot;:&quot;146758900&quot;,&quot;name&quot;:&quot;my company is mine&quot;,&quot;typeId&quot;:10,&quot;annualRevenue&quot;:2000000,&quot;businessIndustryId&quot;:32,&quot;bank&quot;:{&quot;name&quot;:&quot;Bank of Singapore&quot;,&quot;accountNumber&quot;:&quot;12345678&quot;},&quot;documents&quot;:[{&quot;name&quot;:&quot;BANK_STATEMENT_image.png&quot;,&quot;id&quot;:&quot;2938765&quot;,&quot;uuid&quot;:&quot;c013ec9f-d009-43c3-8a08-ea82421daccf&quot;,&quot;type&quot;:&quot;BANK_STATEMENT&quot;}]},&quot;borrower&quot;:{&quot;email&quot;:&quot;qa+test.ava@fundingsocieties.com&quot;,&quot;fullname&quot;:&quot;ava testing 2nd&quot;,&quot;icNumber&quot;:&quot;S3947271F&quot;,&quot;documents&quot;:[{&quot;id&quot;:&quot;2938758&quot;,&quot;name&quot;:&quot;NRIC_FRONT_image (8).png&quot;,&quot;type&quot;:&quot;NRIC_FRONT&quot;,&quot;uuid&quot;:&quot;e0773abc-e25d-4577-b909-15337545d646&quot;},{&quot;id&quot;:&quot;2938760&quot;,&quot;name&quot;:&quot;CBS_image (8).png&quot;,&quot;type&quot;:&quot;CBS&quot;,&quot;uuid&quot;:&quot;fa545b21-20a0-4bbf-910a-6766e8f6fd3f&quot;},{&quot;id&quot;:&quot;2938759&quot;,&quot;name&quot;:&quot;NOA_image (8).png&quot;,&quot;type&quot;:&quot;NOA&quot;,&quot;uuid&quot;:&quot;c9b6671b-8a3a-4cbe-ad00-cfa25062c56f&quot;}],&quot;isCitizen&quot;:true,&quot;dateOfBirth&quot;:&quot;1995-12-30&quot;},&quot;directors&quot;:[],&quot;appliedTenor&quot;:5,&quot;appliedAmount&quot;:100000,&quot;financingPurpose&quot;:&quot;business-expansion&quot;,&quot;personalDataConsent&quot;:true,&quot;consentToBeContactedThroughWhatsapp&quot;:true,&quot;submitConsent&quot;:true}
+
+11:56:38.446 response time in milliseconds: 15515
+1 &lt; 504
+1 &lt; Date: Thu, 08 Dec 2022 04:56:38 GMT
+1 &lt; Content-Type: text/plain
+1 &lt; Content-Length: 24
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx/1.17.10
+upstream request timeout
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.285">
+      <div class="step-ref failed">285</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.285">11:56:38.453 src/test/java/examples/users/loancreated.feature:285
+And status 200
+status code was: 504, expected: 200, response time in milliseconds: 15515, url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/submit/sg, response: 
+upstream request timeout
+src/test/java/examples/users/loancreated.feature:285
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.287">
+      <div class="step-ref skipped">287</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>call read(&#39;classpath:examples/users/loanget.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.288">
+      <div class="step-ref skipped">288</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>call read(&#39;classpath:examples/users/activeloan.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
