@@ -71,34 +71,7 @@ Feature: loan creation
     And method put
     And status 200
 
-  Scenario: upload documents
-
-    Given path '/ext/documents'
-    Then header member-uuid = uuid
-    Then header username = username
-    Then header country-id = 'sg'
-    Then header Content-type = "multipart/form-data"
-
-    #* def path = read("/Users/salma.syahna/Desktop/myproject/src/test/java/examples/users/NIRC-ex.png")
-    #upload NIRC
-    And multipart file file = { read: 'NIRC-ex.png' }
-    And multipart field docType = 'NRIC_FRONT'
-    #upload NOA
-    #And multipart file file = { read: 'NIRC-ex.png' }
-    #And multipart field docType = 'NOA'
-    #upload CBS
-    #And multipart file file = { read: 'NIRC-ex.png' }
-    #And multipart field docType = 'CBS'
-
-    #And multipart file file = { read: 'NIRC-ex.png' }
-    #And multipart field docType = 'BANK_STATEMENT'
-
-    And method post
-    And status 200
-
-    * def doc_uuid = response.uuid
-    * def id = response.dmsId
-
+  ##run this endpoint to trying change payload response
   Scenario: update loan in applicant details
 
     Given path '/ext/loan-draft/sg'
