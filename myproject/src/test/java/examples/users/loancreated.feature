@@ -5,7 +5,7 @@ Feature: loan creation
     #* call read('classpath:examples/users/login.feature')
     * def username = 'salma.syahna@fundingsocieties.com'
     * def uuid = 'c8e3372b-204d-4fcb-bc13-bd36d9136254'
-    * call read('classpath:examples/users/uploadFiles.feature')
+    * call read('classpath:examples/users/uploadfiles.feature')
     * def doc_uuid = response.uuid
     * def id = response.dmsId
     #* call read('classpath:examples/users/loanget.feature')
