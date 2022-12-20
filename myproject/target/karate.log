@@ -10099,3 +10099,2910 @@ src/test/java/examples/users/submitloan.feature:70
 {}
 
 08:28:09.835 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/submitloan.feature
+18:19:04.485 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:19:04.859 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:19:04.860 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671448744859
+18:19:04.899 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+18:19:06.492 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:19:06.579 [main] ERROR com.intuit.karate - src/test/java/examples/users/uploadfiles.feature:6
+Then header member-uuid = uuid
+js failed:
+>>>>
+01: uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uuid" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/uploadfiles.feature:6
+18:19:07.633 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/uploadfiles.feature
+18:19:32.158 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:19:32.533 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:19:32.536 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671448772535
+18:19:32.570 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 9
+18:19:33.949 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:19:34.175 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+18:19:34.544 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=4f22d5c4f60405cf
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+18:19:35.426 [main] DEBUG com.intuit.karate - response time in milliseconds: 878
+1 < 200
+1 < Date: Mon, 19 Dec 2022 11:19:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-1Reezvs/FXo2oH5IakYDcuppIDE"
+1 < x-envoy-upstream-service-time: 345
+{"uuid":"451fb367-e893-44ae-8e74-25bddc3d7e10","dmsId":2963521}
+
+18:19:35.449 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'uuid' with new value: response.uuid
+18:19:35.457 [main] ERROR com.intuit.karate - src/test/java/examples/users/uploadfiles.feature:37
+* ser payload.uuid = uuid
+no step-definition method match found for: ser payload.uuid = uuid
+src/test/java/examples/users/uploadfiles.feature:37
+18:19:36.310 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/uploadfiles.feature
+18:20:00.869 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:20:01.153 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:20:01.154 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671448801154
+18:20:01.177 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 9
+18:20:01.926 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:20:02.096 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+18:20:02.317 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=9a1b8d1eef6d8b11
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+18:20:02.904 [main] DEBUG com.intuit.karate - response time in milliseconds: 584
+1 < 200
+1 < Date: Mon, 19 Dec 2022 11:20:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-y4uOf5GCWrTR2S37Dplcp3l0MWg"
+1 < x-envoy-upstream-service-time: 254
+{"uuid":"c916cc81-28ba-407a-9ebf-3629dbb1abfe","dmsId":2963522}
+
+18:20:02.917 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'uuid' with new value: response.uuid
+18:20:03.680 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/uploadfiles.feature
+18:31:41.783 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:31:42.192 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:31:42.194 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671449502194
+18:31:42.226 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 9
+18:31:43.685 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:31:43.936 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+18:31:44.191 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=e28194f19a1863cd
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+18:31:45.029 [main] DEBUG com.intuit.karate - response time in milliseconds: 835
+1 < 200
+1 < Date: Mon, 19 Dec 2022 11:31:45 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-/1cGUbuE2CrkTY3mNhvRSBPlDMU"
+1 < x-envoy-upstream-service-time: 309
+{"uuid":"57f777d0-36b7-460c-a430-42e0356b9b50","dmsId":2963523}
+
+18:31:45.049 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'uuid' with new value: response.uuid
+18:31:45.955 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/uploadfiles.feature
+18:33:04.159 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:33:04.450 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:33:04.451 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671449584451
+18:33:04.476 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 40
+18:33:05.249 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:33:05.448 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+18:33:05.736 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=51f1272b46f8a184
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+18:33:06.417 [main] DEBUG com.intuit.karate - response time in milliseconds: 679
+1 < 200
+1 < Date: Mon, 19 Dec 2022 11:33:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-FG9HN9/O+x+EwzNtYewlw7Rk+R4"
+1 < x-envoy-upstream-service-time: 254
+{"uuid":"05060d3d-e90e-44fc-8a9f-4871dcae314d","dmsId":2963524}
+
+18:33:06.424 [main] ERROR com.intuit.karate - classpath:examples/users/uploadfiles.feature:21
+And status 200
+"""
+{
+   "name": "NRIC_FRONT_image (8).png",
+    "id": "2938758",
+    "uuid": "e0773abc-e25d-4577-b909-15337545d646",
+    "type": "NRIC_FRONT"
+}
+"""
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:21
+18:33:06.440 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+18:33:06.442 [main] DEBUG com.intuit.karate - request:
+2 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+2 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+2 > username: salma.syahna@fundingsocieties.com
+2 > country-id: sg
+2 > Content-type: multipart/form-data; boundary=f09980a34975d61
+2 > Content-Length: 24027
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+18:33:07.022 [main] DEBUG com.intuit.karate - response time in milliseconds: 579
+2 < 200
+2 < Date: Mon, 19 Dec 2022 11:33:07 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 63
+2 < Connection: keep-alive
+2 < Server: nginx/1.17.10
+2 < x-powered-by: Express
+2 < etag: W/"3f-YeDQBwIGKkyx+4SFTmPr2uB+Nyg"
+2 < x-envoy-upstream-service-time: 331
+{"uuid":"1d9d1a91-48ed-4469-8f49-f0ddaab62103","dmsId":2963525}
+
+18:33:07.040 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+18:33:07.044 [main] DEBUG com.intuit.karate - request:
+3 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+3 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+3 > username: salma.syahna@fundingsocieties.com
+3 > country-id: sg
+3 > Content-type: multipart/form-data; boundary=230150c95e9e5570
+3 > Content-Length: 24030
+3 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+3 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+18:33:07.433 [main] DEBUG com.intuit.karate - response time in milliseconds: 388
+3 < 200
+3 < Date: Mon, 19 Dec 2022 11:33:07 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 63
+3 < Connection: keep-alive
+3 < Server: nginx/1.17.10
+3 < x-powered-by: Express
+3 < etag: W/"3f-l1pTk2elUStpfbC4Rz/gVh2KrUo"
+3 < x-envoy-upstream-service-time: 228
+{"uuid":"7f446e95-10c6-441f-b27e-86927c5bdcd5","dmsId":2963526}
+
+18:33:07.435 [main] ERROR com.intuit.karate - classpath:examples/users/uploadfiles.feature:66
+And status 200
+"""
+{
+      "name": "CBS_image (8).png",
+      "id": "2938760",
+      "uuid": "fa545b21-20a0-4bbf-910a-6766e8f6fd3f",
+      "type": "CBS"
+ }
+"""
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:66
+18:33:07.447 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+18:33:07.451 [main] DEBUG com.intuit.karate - request:
+4 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+4 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+4 > username: salma.syahna@fundingsocieties.com
+4 > country-id: sg
+4 > Content-type: multipart/form-data; boundary=52ffb4ee8ed02fd2
+4 > Content-Length: 24042
+4 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+4 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+
+18:33:07.736 [main] DEBUG com.intuit.karate - response time in milliseconds: 285
+4 < 200
+4 < Date: Mon, 19 Dec 2022 11:33:07 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 63
+4 < Connection: keep-alive
+4 < Server: nginx/1.17.10
+4 < x-powered-by: Express
+4 < etag: W/"3f-dw3nssvlDHxyjrYz91jvxkyOIo4"
+4 < x-envoy-upstream-service-time: 108
+{"uuid":"b95535bc-a9c6-43cf-9512-7613ae3aa391","dmsId":2963527}
+
+18:33:07.739 [main] ERROR com.intuit.karate - src/test/java/examples/users/loancreated.feature:8
+* call read('classpath:examples/users/uploadfiles.feature')
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:21
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:66
+src/test/java/examples/users/loancreated.feature:8
+18:33:08.573 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/loancreated.feature
+18:34:59.626 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:34:59.920 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:34:59.921 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671449699921
+18:34:59.945 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 75
+18:35:00.874 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:35:01.112 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+18:35:01.361 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=51ec7e6e618b4b7c
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+18:35:02.223 [main] DEBUG com.intuit.karate - response time in milliseconds: 858
+1 < 200
+1 < Date: Mon, 19 Dec 2022 11:35:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-sB5oZvIyp3wTXzw54HPriXCY9VM"
+1 < x-envoy-upstream-service-time: 362
+{"uuid":"9e443a51-242b-4d26-b509-976af05b2243","dmsId":2963528}
+
+18:35:02.230 [main] ERROR com.intuit.karate - classpath:examples/users/uploadfiles.feature:21
+And status 200
+"""
+{
+   "name": "NRIC_FRONT_image (8).png",
+    "id": "2938758",
+    "uuid": "e0773abc-e25d-4577-b909-15337545d646",
+    "type": "NRIC_FRONT"
+}
+"""
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:21
+18:35:02.242 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+18:35:02.245 [main] DEBUG com.intuit.karate - request:
+2 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+2 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+2 > username: salma.syahna@fundingsocieties.com
+2 > country-id: sg
+2 > Content-type: multipart/form-data; boundary=e99a80b117929102
+2 > Content-Length: 24030
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+18:35:02.717 [main] DEBUG com.intuit.karate - response time in milliseconds: 471
+2 < 200
+2 < Date: Mon, 19 Dec 2022 11:35:02 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 63
+2 < Connection: keep-alive
+2 < Server: nginx/1.17.10
+2 < x-powered-by: Express
+2 < etag: W/"3f-hzDXLy/zlQDMKSbInOTYKTn8LPU"
+2 < x-envoy-upstream-service-time: 261
+{"uuid":"c42def5a-a2c3-4041-9200-af84e8d97e0e","dmsId":2963529}
+
+18:35:02.730 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+18:35:02.733 [main] DEBUG com.intuit.karate - request:
+3 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+3 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+3 > username: salma.syahna@fundingsocieties.com
+3 > country-id: sg
+3 > Content-type: multipart/form-data; boundary=7fc58fae99d1eda2
+3 > Content-Length: 24030
+3 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+3 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+18:35:03.126 [main] DEBUG com.intuit.karate - response time in milliseconds: 393
+3 < 200
+3 < Date: Mon, 19 Dec 2022 11:35:03 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 63
+3 < Connection: keep-alive
+3 < Server: nginx/1.17.10
+3 < x-powered-by: Express
+3 < etag: W/"3f-IBz9+3TnOZJ267wOBQWK5reD/WM"
+3 < x-envoy-upstream-service-time: 161
+{"uuid":"e827c3ae-2bd7-407f-a669-5a833d6fc411","dmsId":2963530}
+
+18:35:03.128 [main] ERROR com.intuit.karate - classpath:examples/users/uploadfiles.feature:66
+And status 200
+"""
+{
+      "name": "CBS_image (8).png",
+      "id": "2938760",
+      "uuid": "fa545b21-20a0-4bbf-910a-6766e8f6fd3f",
+      "type": "CBS"
+ }
+"""
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:66
+18:35:03.137 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+18:35:03.140 [main] DEBUG com.intuit.karate - request:
+4 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+4 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+4 > username: salma.syahna@fundingsocieties.com
+4 > country-id: sg
+4 > Content-type: multipart/form-data; boundary=fa3843827965e52b
+4 > Content-Length: 24042
+4 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+4 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+
+18:35:03.494 [main] DEBUG com.intuit.karate - response time in milliseconds: 353
+4 < 200
+4 < Date: Mon, 19 Dec 2022 11:35:03 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 63
+4 < Connection: keep-alive
+4 < Server: nginx/1.17.10
+4 < x-powered-by: Express
+4 < etag: W/"3f-AttFzAL27fr+g/zqFBY8FbW2Th8"
+4 < x-envoy-upstream-service-time: 195
+{"uuid":"8631e2a3-d999-48c8-9b69-107ad2169d94","dmsId":2963531}
+
+18:35:03.498 [main] ERROR com.intuit.karate - src/test/java/examples/users/loancreated.feature:8
+* call read('classpath:examples/users/uploadfiles.feature')
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:21
+no step-definition method match found for: status 200
+classpath:examples/users/uploadfiles.feature:66
+src/test/java/examples/users/loancreated.feature:8
+18:35:04.344 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/loancreated.feature
+10:44:29.296 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+10:44:29.689 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:44:29.691 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671507869690
+10:44:29.722 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 75
+10:44:31.137 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:44:31.408 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+10:44:31.787 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=2620f892fae3d035
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+10:46:02.234 [main] ERROR com.intuit.karate - org.apache.http.conn.ConnectTimeoutException: Connect to service-mesh-ingress-uat.fundingasiagroup.com:443 [service-mesh-ingress-uat.fundingasiagroup.com/10.40.40.80, service-mesh-ingress-uat.fundingasiagroup.com/10.40.11.237, service-mesh-ingress-uat.fundingasiagroup.com/10.40.19.185] failed: Connect timed out, http call failed after 90800 milliseconds for url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+10:46:02.235 [main] ERROR com.intuit.karate - classpath:examples/users/uploadfiles.feature:20
+And method post
+http call failed after 90800 milliseconds for url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+classpath:examples/users/uploadfiles.feature:20
+10:46:02.249 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+10:46:02.253 [main] DEBUG com.intuit.karate - request:
+2 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+2 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+2 > username: salma.syahna@fundingsocieties.com
+2 > country-id: sg
+2 > Content-type: multipart/form-data; boundary=efa8899d31d8d9a2
+2 > Content-Length: 24030
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+10:47:33.371 [main] ERROR com.intuit.karate - org.apache.http.conn.ConnectTimeoutException: Connect to service-mesh-ingress-uat.fundingasiagroup.com:443 [service-mesh-ingress-uat.fundingasiagroup.com/10.40.19.185, service-mesh-ingress-uat.fundingasiagroup.com/10.40.40.80, service-mesh-ingress-uat.fundingasiagroup.com/10.40.11.237] failed: Connect timed out, http call failed after 91120 milliseconds for url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+10:47:33.373 [main] ERROR com.intuit.karate - classpath:examples/users/uploadfiles.feature:35
+And method post
+http call failed after 91120 milliseconds for url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+classpath:examples/users/uploadfiles.feature:35
+10:47:33.386 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+10:47:33.389 [main] DEBUG com.intuit.karate - request:
+3 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+3 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+3 > username: salma.syahna@fundingsocieties.com
+3 > country-id: sg
+3 > Content-type: multipart/form-data; boundary=e0824878dfd26dad
+3 > Content-Length: 24030
+3 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+3 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+10:47:35.631 [main] DEBUG com.intuit.karate - response time in milliseconds: 2237
+3 < 200
+3 < Date: Tue, 20 Dec 2022 03:47:35 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 63
+3 < Connection: keep-alive
+3 < Server: nginx/1.17.10
+3 < x-powered-by: Express
+3 < etag: W/"3f-GuWX0+k8Jvw8cHEmo2w0ABAjLI4"
+3 < x-envoy-upstream-service-time: 370
+{"uuid":"3a74927d-1be4-4a43-a4ef-5672dbfa472c","dmsId":2965524}
+
+10:47:35.654 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+10:47:35.656 [main] DEBUG com.intuit.karate - request:
+4 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+4 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+4 > username: salma.syahna@fundingsocieties.com
+4 > country-id: sg
+4 > Content-type: multipart/form-data; boundary=1c97942f795fa506
+4 > Content-Length: 24042
+4 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+4 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+
+10:47:36.169 [main] DEBUG com.intuit.karate - response time in milliseconds: 512
+4 < 200
+4 < Date: Tue, 20 Dec 2022 03:47:36 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 63
+4 < Connection: keep-alive
+4 < Server: nginx/1.17.10
+4 < x-powered-by: Express
+4 < etag: W/"3f-E8uSRjprYdpUnU87JzjoRiu/pp8"
+4 < x-envoy-upstream-service-time: 341
+{"uuid":"b69474c3-f0cc-4002-a9f8-38dd916f624f","dmsId":2965525}
+
+10:47:36.172 [main] ERROR com.intuit.karate - src/test/java/examples/users/loancreated.feature:8
+* call read('classpath:examples/users/uploadfiles.feature')
+http call failed after 90800 milliseconds for url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+classpath:examples/users/uploadfiles.feature:20
+http call failed after 91120 milliseconds for url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+classpath:examples/users/uploadfiles.feature:35
+src/test/java/examples/users/loancreated.feature:8
+10:47:37.303 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/loancreated.feature
+10:47:45.231 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+10:47:45.628 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:47:45.629 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671508065628
+10:47:45.656 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 75
+10:47:46.880 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:47:47.145 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+10:47:47.369 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=5de4ed32efc0ef56
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+10:47:48.071 [main] DEBUG com.intuit.karate - response time in milliseconds: 699
+1 < 200
+1 < Date: Tue, 20 Dec 2022 03:47:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-huQeiUouNiJQ2MH16Bk+7axgbrI"
+1 < x-envoy-upstream-service-time: 371
+{"uuid":"d5bff1ba-46b4-40d0-9d48-4ff7d623533d","dmsId":2965526}
+
+10:47:48.096 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+10:47:48.099 [main] DEBUG com.intuit.karate - request:
+2 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+2 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+2 > username: salma.syahna@fundingsocieties.com
+2 > country-id: sg
+2 > Content-type: multipart/form-data; boundary=20b9709bd416cc8c
+2 > Content-Length: 24030
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+10:47:48.477 [main] DEBUG com.intuit.karate - response time in milliseconds: 378
+2 < 200
+2 < Date: Tue, 20 Dec 2022 03:47:48 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 63
+2 < Connection: keep-alive
+2 < Server: nginx/1.17.10
+2 < x-powered-by: Express
+2 < etag: W/"3f-TltVHon2xwz9rlgUjozAxfmLZSY"
+2 < x-envoy-upstream-service-time: 198
+{"uuid":"a5749c1f-416c-4de8-b020-434b9631e63d","dmsId":2965527}
+
+10:47:48.493 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+10:47:48.496 [main] DEBUG com.intuit.karate - request:
+3 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+3 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+3 > username: salma.syahna@fundingsocieties.com
+3 > country-id: sg
+3 > Content-type: multipart/form-data; boundary=f9d502cceba3e191
+3 > Content-Length: 24030
+3 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+3 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+10:47:48.880 [main] DEBUG com.intuit.karate - response time in milliseconds: 383
+3 < 200
+3 < Date: Tue, 20 Dec 2022 03:47:48 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 63
+3 < Connection: keep-alive
+3 < Server: nginx/1.17.10
+3 < x-powered-by: Express
+3 < etag: W/"3f-+pj93QsE5x+bxNxVm9nk+3rjDmM"
+3 < x-envoy-upstream-service-time: 191
+{"uuid":"712849cb-a744-4b84-bedb-c453da1369a3","dmsId":2965528}
+
+10:47:48.895 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+10:47:48.898 [main] DEBUG com.intuit.karate - request:
+4 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+4 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+4 > username: salma.syahna@fundingsocieties.com
+4 > country-id: sg
+4 > Content-type: multipart/form-data; boundary=46777e3562e7f1d8
+4 > Content-Length: 24042
+4 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+4 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+
+10:47:49.204 [main] DEBUG com.intuit.karate - response time in milliseconds: 306
+4 < 200
+4 < Date: Tue, 20 Dec 2022 03:47:49 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 63
+4 < Connection: keep-alive
+4 < Server: nginx/1.17.10
+4 < x-powered-by: Express
+4 < etag: W/"3f-O3MmSIUZCTpYXlsswjbh22a/qVY"
+4 < x-envoy-upstream-service-time: 143
+{"uuid":"3ca07755-213b-4333-8bc0-d1cdae7278d8","dmsId":2965529}
+
+10:47:49.242 [main] DEBUG com.intuit.karate - request:
+5 > PUT https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/sg
+5 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+5 > username: salma.syahna@fundingsocieties.com
+5 > country-id: sg
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 918
+5 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+5 > Accept-Encoding: gzip,deflate
+{"delete_previous":false,"draft":{"appliedAmount":100000,"appliedTenor":5,"financingPurpose":"business-expansion","personalDataConsent":true,"utm":{},"consentToBeContactedThroughWhatsapp":true,"company":{"name":"my company is mine","uen":"146758900","typeId":10,"businessIndustryId":32,"annualRevenue":2000000},"borrower":{"fullname":"ava testing 2nd","email":"qa+test.ava@fundingsocieties.com","icNumber":"S3947271F","dateOfBirth":"1995-12-30","isCitizen":true,"documents":[{"name":"NRIC_FRONT_image (8).png","id":"2938758","uuid":"e0773abc-e25d-4577-b909-15337545d646","type":"NRIC_FRONT"},{"name":"CBS_image (8).png","id":"2938760","uuid":"fa545b21-20a0-4bbf-910a-6766e8f6fd3f","type":"CBS"},{"name":"NOA_image (8).png","id":"2938759","uuid":"c9b6671b-8a3a-4cbe-ad00-cfa25062c56f","type":"NOA"}]}},"ui":{"lastVisitedTabId":"other-parties"},"documents":[{"id":2965529,"uuid":"3ca07755-213b-4333-8bc0-d1cdae7278d8"}]}
+
+10:47:49.424 [main] DEBUG com.intuit.karate - response time in milliseconds: 181
+5 < 400
+5 < Date: Tue, 20 Dec 2022 03:47:49 GMT
+5 < Content-Type: application/json; charset=utf-8
+5 < Content-Length: 242
+5 < Connection: keep-alive
+5 < Server: nginx/1.17.10
+5 < x-powered-by: Express
+5 < etag: W/"f2-OCcBok9O2dOsCBqRKvy2DqzaJdg"
+5 < x-envoy-upstream-service-time: 58
+{"status":false,"error":{"code":400,"message":"request.body should NOT have additional properties","errors":[{"path":".body.documents","message":"should NOT have additional properties","errorCode":"additionalProperties.openapi.validation"}]}}
+
+10:47:49.427 [main] ERROR com.intuit.karate - src/test/java/examples/users/loancreated.feature:136
+And status 200
+status code was: 400, expected: 200, response time in milliseconds: 181, url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/sg, response: 
+{"status":false,"error":{"code":400,"message":"request.body should NOT have additional properties","errors":[{"path":".body.documents","message":"should NOT have additional properties","errorCode":"additionalProperties.openapi.validation"}]}}
+src/test/java/examples/users/loancreated.feature:136
+10:47:50.511 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/loancreated.feature
+11:18:54.940 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+11:18:55.326 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:18:55.330 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671509935327
+11:18:55.358 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 75
+11:18:57.054 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:18:57.350 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+11:18:57.633 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=1d4493ff6c3c0dbd
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+11:18:59.524 [main] DEBUG com.intuit.karate - response time in milliseconds: 1888
+1 < 200
+1 < Date: Tue, 20 Dec 2022 04:18:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-ukPqW7pWqFr2vKXf9XRbDgLZIQU"
+1 < x-envoy-upstream-service-time: 341
+{"uuid":"edcad854-a07d-4354-ac27-62ff9a758823","dmsId":2965531}
+
+11:18:59.545 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+11:18:59.547 [main] DEBUG com.intuit.karate - request:
+2 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+2 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+2 > username: salma.syahna@fundingsocieties.com
+2 > country-id: sg
+2 > Content-type: multipart/form-data; boundary=17c51cc5a6d6987d
+2 > Content-Length: 24030
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+11:19:00.130 [main] DEBUG com.intuit.karate - response time in milliseconds: 582
+2 < 200
+2 < Date: Tue, 20 Dec 2022 04:18:59 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 63
+2 < Connection: keep-alive
+2 < Server: nginx/1.17.10
+2 < x-powered-by: Express
+2 < etag: W/"3f-2JnsS+hL0VqhR7EazkoeL/3efbM"
+2 < x-envoy-upstream-service-time: 323
+{"uuid":"8968f1d5-6b3b-4712-878d-bc5935f5ab92","dmsId":2965532}
+
+11:19:00.139 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+11:19:00.141 [main] DEBUG com.intuit.karate - request:
+3 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+3 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+3 > username: salma.syahna@fundingsocieties.com
+3 > country-id: sg
+3 > Content-type: multipart/form-data; boundary=459fcb5cc7c3497a
+3 > Content-Length: 24030
+3 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+3 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+11:19:00.635 [main] DEBUG com.intuit.karate - response time in milliseconds: 494
+3 < 200
+3 < Date: Tue, 20 Dec 2022 04:19:00 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 63
+3 < Connection: keep-alive
+3 < Server: nginx/1.17.10
+3 < x-powered-by: Express
+3 < etag: W/"3f-lk/zeYdLzAZ5ZSNeOtGNNND9uZI"
+3 < x-envoy-upstream-service-time: 240
+{"uuid":"b57b0d04-3da7-4872-938f-f434ca7df1e8","dmsId":2965533}
+
+11:19:00.646 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+11:19:00.657 [main] DEBUG com.intuit.karate - request:
+4 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+4 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+4 > username: salma.syahna@fundingsocieties.com
+4 > country-id: sg
+4 > Content-type: multipart/form-data; boundary=27dfd18c4363790c
+4 > Content-Length: 24042
+4 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+4 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+
+11:19:00.974 [main] DEBUG com.intuit.karate - response time in milliseconds: 316
+4 < 200
+4 < Date: Tue, 20 Dec 2022 04:19:00 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 63
+4 < Connection: keep-alive
+4 < Server: nginx/1.17.10
+4 < x-powered-by: Express
+4 < etag: W/"3f-c9EbXdFoud2r+3UEwFiv6eQL/os"
+4 < x-envoy-upstream-service-time: 162
+{"uuid":"8c924d43-8eb6-4b2d-9ebb-2baffa6c338c","dmsId":2965534}
+
+11:19:01.018 [main] DEBUG com.intuit.karate - request:
+5 > PUT https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/sg
+5 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+5 > username: salma.syahna@fundingsocieties.com
+5 > country-id: sg
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 865
+5 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+5 > Accept-Encoding: gzip,deflate
+{"delete_previous":false,"draft":{"appliedAmount":100000,"appliedTenor":5,"financingPurpose":"business-expansion","personalDataConsent":true,"utm":{},"consentToBeContactedThroughWhatsapp":true,"company":{"name":"my company is mine","uen":"146758900","typeId":10,"businessIndustryId":32,"annualRevenue":2000000},"borrower":{"fullname":"ava testing 2nd","email":"qa+test.ava@fundingsocieties.com","icNumber":"S3947271F","dateOfBirth":"1995-12-30","isCitizen":true,"documents":[{"name":"NRIC_FRONT_image (8).png","id":"2938758","uuid":"e0773abc-e25d-4577-b909-15337545d646","type":"NRIC_FRONT"},{"name":"CBS_image (8).png","id":"2938760","uuid":"fa545b21-20a0-4bbf-910a-6766e8f6fd3f","type":"CBS"},{"name":"NOA_image (8).png","id":"2938759","uuid":"c9b6671b-8a3a-4cbe-ad00-cfa25062c56f","type":"NOA"}]}},"ui":{"lastVisitedTabId":"other-parties"},"appliedAmount":10000}
+
+11:19:01.153 [main] DEBUG com.intuit.karate - response time in milliseconds: 135
+5 < 400
+5 < Date: Tue, 20 Dec 2022 04:19:00 GMT
+5 < Content-Type: application/json; charset=utf-8
+5 < Content-Length: 246
+5 < Connection: keep-alive
+5 < Server: nginx/1.17.10
+5 < x-powered-by: Express
+5 < etag: W/"f6-rtPeT0L6lEKME1AF2qzkCOKF6gU"
+5 < x-envoy-upstream-service-time: 3
+{"status":false,"error":{"code":400,"message":"request.body should NOT have additional properties","errors":[{"path":".body.appliedAmount","message":"should NOT have additional properties","errorCode":"additionalProperties.openapi.validation"}]}}
+
+11:19:01.155 [main] ERROR com.intuit.karate - src/test/java/examples/users/loancreated.feature:136
+And status 200
+status code was: 400, expected: 200, response time in milliseconds: 135, url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/sg, response: 
+{"status":false,"error":{"code":400,"message":"request.body should NOT have additional properties","errors":[{"path":".body.appliedAmount","message":"should NOT have additional properties","errorCode":"additionalProperties.openapi.validation"}]}}
+src/test/java/examples/users/loancreated.feature:136
+11:19:02.148 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/loancreated.feature
+11:20:01.544 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+11:20:01.884 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:20:01.886 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671510001886
+11:20:01.916 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 75
+11:20:03.031 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:20:03.217 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+11:20:03.427 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=1f9d2d7e1db319db
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+11:20:04.149 [main] DEBUG com.intuit.karate - response time in milliseconds: 719
+1 < 200
+1 < Date: Tue, 20 Dec 2022 04:20:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-Eg3mmZXXfXprRbEPzWTBMAfuNdM"
+1 < x-envoy-upstream-service-time: 335
+{"uuid":"18401bec-661b-4424-8633-b424f4f2eafa","dmsId":2965535}
+
+11:20:04.171 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+11:20:04.174 [main] DEBUG com.intuit.karate - request:
+2 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+2 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+2 > username: salma.syahna@fundingsocieties.com
+2 > country-id: sg
+2 > Content-type: multipart/form-data; boundary=fa11e8e527767056
+2 > Content-Length: 24030
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+11:20:04.747 [main] DEBUG com.intuit.karate - response time in milliseconds: 572
+2 < 200
+2 < Date: Tue, 20 Dec 2022 04:20:04 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 63
+2 < Connection: keep-alive
+2 < Server: nginx/1.17.10
+2 < x-powered-by: Express
+2 < etag: W/"3f-rc4cNEX7ysinjO+HWanuO2m5II8"
+2 < x-envoy-upstream-service-time: 303
+{"uuid":"959a9f77-e15d-4b8a-855d-f10103934701","dmsId":2965536}
+
+11:20:04.763 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+11:20:04.766 [main] DEBUG com.intuit.karate - request:
+3 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+3 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+3 > username: salma.syahna@fundingsocieties.com
+3 > country-id: sg
+3 > Content-type: multipart/form-data; boundary=4385f80928e22a71
+3 > Content-Length: 24030
+3 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+3 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+11:20:05.158 [main] DEBUG com.intuit.karate - response time in milliseconds: 391
+3 < 200
+3 < Date: Tue, 20 Dec 2022 04:20:04 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 63
+3 < Connection: keep-alive
+3 < Server: nginx/1.17.10
+3 < x-powered-by: Express
+3 < etag: W/"3f-i1syLw5kZHUQ6LEsOEHtSBJ1KDE"
+3 < x-envoy-upstream-service-time: 172
+{"uuid":"778513b1-e448-4680-aa7b-add0e15ef072","dmsId":2965537}
+
+11:20:05.174 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+11:20:05.177 [main] DEBUG com.intuit.karate - request:
+4 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+4 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+4 > username: salma.syahna@fundingsocieties.com
+4 > country-id: sg
+4 > Content-type: multipart/form-data; boundary=ddc9ecdac7c068b9
+4 > Content-Length: 24042
+4 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+4 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+
+11:20:05.524 [main] DEBUG com.intuit.karate - response time in milliseconds: 346
+4 < 200
+4 < Date: Tue, 20 Dec 2022 04:20:05 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 63
+4 < Connection: keep-alive
+4 < Server: nginx/1.17.10
+4 < x-powered-by: Express
+4 < etag: W/"3f-pga1Ls2zDJkSYfZQGzFJy9x04H8"
+4 < x-envoy-upstream-service-time: 191
+{"uuid":"3b646257-34a8-45a5-8cb4-eba14d8d7489","dmsId":2965538}
+
+11:20:05.542 [main] ERROR com.intuit.karate - src/test/java/examples/users/loancreated.feature:132
+* set payload.draft[0].appliedAmount = 10000
+class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')
+src/test/java/examples/users/loancreated.feature:132
+11:20:06.395 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/loancreated.feature
+11:25:00.855 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+11:25:01.210 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:25:01.212 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671510301211
+11:25:02.481 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:02.547 [main] ERROR com.intuit.karate - src/test/java/examples/users/uploadfiles.feature:11
+Then header member-uuid = uuid
+js failed:
+>>>>
+01: uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uuid" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/uploadfiles.feature:11
+11:25:02.555 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:02.559 [main] ERROR com.intuit.karate - src/test/java/examples/users/uploadfiles.feature:44
+Then header member-uuid = uuid
+js failed:
+>>>>
+01: uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uuid" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/uploadfiles.feature:44
+11:25:02.565 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:02.568 [main] ERROR com.intuit.karate - src/test/java/examples/users/uploadfiles.feature:76
+Then header member-uuid = uuid
+js failed:
+>>>>
+01: uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uuid" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/uploadfiles.feature:76
+11:25:02.574 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:02.576 [main] ERROR com.intuit.karate - src/test/java/examples/users/uploadfiles.feature:109
+Then header member-uuid = uuid
+js failed:
+>>>>
+01: uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uuid" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/uploadfiles.feature:109
+11:25:03.577 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/uploadfiles.feature
+11:25:36.640 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+11:25:36.985 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:25:36.988 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671510336987
+11:25:37.015 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 8
+11:25:38.422 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:38.488 [main] ERROR com.intuit.karate - src/test/java/examples/users/uploadfiles.feature:11
+Then header member-uuid = uuid
+js failed:
+>>>>
+01: uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uuid" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/uploadfiles.feature:11
+11:25:39.344 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/uploadfiles.feature
+11:25:55.126 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+11:25:55.577 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:25:55.580 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671510355579
+11:25:56.516 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:56.739 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+11:25:56.994 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=ac978c47397a08f1
+1 > Content-Length: 24038
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+
+11:25:57.956 [main] DEBUG com.intuit.karate - response time in milliseconds: 957
+1 < 200
+1 < Date: Tue, 20 Dec 2022 04:25:57 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-unu9lRvv0KVAemysaL6hQ+9ZJUw"
+1 < x-envoy-upstream-service-time: 254
+{"uuid":"5b6f337d-d0a8-449b-a3a8-da2de9a66454","dmsId":2965539}
+
+11:25:57.971 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'uuid' with new value: response.uuid
+11:25:57.987 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:57.992 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+11:25:57.994 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=d6f3498114a91ecc
+1 > Content-Length: 24030
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+11:25:58.650 [main] DEBUG com.intuit.karate - response time in milliseconds: 654
+1 < 200
+1 < Date: Tue, 20 Dec 2022 04:25:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-ZZ22F3zAalCKro8Tptx260r61+k"
+1 < x-envoy-upstream-service-time: 387
+{"uuid":"0a03bb93-8c92-449a-a98b-6bce3b79c3b3","dmsId":2965540}
+
+11:25:58.655 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'uuid' with new value: response.uuid
+11:25:58.666 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:58.674 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+11:25:58.677 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=1f586b99ae7dc95
+1 > Content-Length: 24027
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+
+11:25:59.072 [main] DEBUG com.intuit.karate - response time in milliseconds: 395
+1 < 200
+1 < Date: Tue, 20 Dec 2022 04:25:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-yoS5R/9H+MVajWcg90yRv7TN5JM"
+1 < x-envoy-upstream-service-time: 218
+{"uuid":"85466dc9-098b-46fd-9707-d19856de04b9","dmsId":2965541}
+
+11:25:59.076 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'uuid' with new value: response.uuid
+11:25:59.089 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:59.094 [main] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+11:25:59.097 [main] DEBUG com.intuit.karate - request:
+1 > POST https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/documents
+1 > member-uuid: c8e3372b-204d-4fcb-bc13-bd36d9136254
+1 > username: salma.syahna@fundingsocieties.com
+1 > country-id: sg
+1 > Content-type: multipart/form-data; boundary=57912fdb32495f42
+1 > Content-Length: 24042
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="NIRC-ex.png"
+content-type: image/png; charset=UTF-8
+content-length: 23697
+Completed: true
+IsInMemory: false
+RealFile: /Users/salma.syahna/Documents/GitHub/myproject/myproject/src/test/java/examples/users/NIRC-ex.png DeleteAfter: true
+
+content-disposition: form-data; name="docType"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+
+11:25:59.426 [main] DEBUG com.intuit.karate - response time in milliseconds: 329
+1 < 200
+1 < Date: Tue, 20 Dec 2022 04:25:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"3f-DNT4nXbzOfNr+YtBCFgRpjsTSy8"
+1 < x-envoy-upstream-service-time: 149
+{"uuid":"8d40f313-2ff4-4656-bc3e-e28f0febda05","dmsId":2965542}
+
+11:25:59.428 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'uuid' with new value: response.uuid
+11:26:00.256 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/uploadfiles.feature
+14:55:20.726 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+14:55:21.105 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:55:21.109 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671522921107
+14:55:21.148 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+14:55:22.757 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:55:22.828 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:6
+When path /ext/loan-draft/id/elevate/individual
+js failed:
+>>>>
+01: /ext/loan-draft/id/elevate/individual
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Unsupported RegExp flag: l
+/ext/loan-draft/id/elevate/individual
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:373)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+
+src/test/java/examples/users/acceptconsent.feature:6
+14:55:23.784 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+14:55:35.972 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+14:55:36.255 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:55:36.257 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671522936256
+14:55:36.280 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+14:55:37.147 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:55:37.195 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:6
+When path /ext/loan-draft/id/elevate/individual
+js failed:
+>>>>
+01: /ext/loan-draft/id/elevate/individual
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Unsupported RegExp flag: l
+/ext/loan-draft/id/elevate/individual
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:373)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+
+src/test/java/examples/users/acceptconsent.feature:6
+14:55:38.050 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+14:56:18.067 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+14:56:18.527 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:56:18.531 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671522978530
+14:56:18.559 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+14:56:19.676 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:56:20.139 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 268
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"draft":{"financingRequirement":{"ownsBusiness":true,"businessEntityType":"INDIVIDUAL","referralCode":"","loanAmount":"undefined"},"personalDataConsent":true,"utm":{"utmSource":"","utmMedium":"","utmCampaign":"","utmTerm":"","utmContent":""}},"delete_previous":false}
+
+14:56:20.914 [main] DEBUG com.intuit.karate - response time in milliseconds: 769
+1 < 200
+1 < Date: Tue, 20 Dec 2022 07:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"2f-sks/2GEzl+hM7YcfWM0SoFgtgLc"
+1 < x-envoy-upstream-service-time: 223
+{"uuid":"bd254d24-4785-4cbe-87c4-16af33514374"}
+
+14:56:21.691 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:20:01.851 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:20:02.209 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:20:02.214 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671524402211
+15:20:02.244 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+15:20:03.651 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:20:04.046 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 268
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"draft":{"financingRequirement":{"ownsBusiness":true,"businessEntityType":"INDIVIDUAL","referralCode":"","loanAmount":"undefined"},"personalDataConsent":true,"utm":{"utmSource":"","utmMedium":"","utmCampaign":"","utmTerm":"","utmContent":""}},"delete_previous":false}
+
+15:20:04.828 [main] DEBUG com.intuit.karate - response time in milliseconds: 778
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:20:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"2f-sks/2GEzl+hM7YcfWM0SoFgtgLc"
+1 < x-envoy-upstream-service-time: 382
+{"uuid":"bd254d24-4785-4cbe-87c4-16af33514374"}
+
+15:20:04.861 [main] DEBUG com.intuit.karate - request:
+2 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individualbd254d24-4785-4cbe-87c4-16af33514374
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+15:20:04.993 [main] DEBUG com.intuit.karate - response time in milliseconds: 131
+2 < 404
+2 < Date: Tue, 20 Dec 2022 08:20:05 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 177
+2 < Connection: keep-alive
+2 < Server: nginx/1.17.10
+2 < x-powered-by: Express
+2 < etag: W/"b1-d+rOUS/kImCvwJ3bPld8AUjEtcE"
+2 < x-envoy-upstream-service-time: 4
+{"status":false,"error":{"code":404,"message":"not found","errors":[{"path":"/ext/loan-draft/id/elevate/individualbd254d24-4785-4cbe-87c4-16af33514374","message":"not found"}]}}
+
+15:20:04.994 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:44
+And status 200
+status code was: 404, expected: 200, response time in milliseconds: 131, url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individualbd254d24-4785-4cbe-87c4-16af33514374, response: 
+{"status":false,"error":{"code":404,"message":"not found","errors":[{"path":"/ext/loan-draft/id/elevate/individualbd254d24-4785-4cbe-87c4-16af33514374","message":"not found"}]}}
+src/test/java/examples/users/acceptconsent.feature:44
+15:20:05.825 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:20:34.741 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:20:34.998 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:20:34.999 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671524434998
+15:20:35.020 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+15:20:35.753 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:20:36.045 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 268
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"draft":{"financingRequirement":{"ownsBusiness":true,"businessEntityType":"INDIVIDUAL","referralCode":"","loanAmount":"undefined"},"personalDataConsent":true,"utm":{"utmSource":"","utmMedium":"","utmCampaign":"","utmTerm":"","utmContent":""}},"delete_previous":false}
+
+15:20:36.446 [main] DEBUG com.intuit.karate - response time in milliseconds: 398
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:20:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"2f-sks/2GEzl+hM7YcfWM0SoFgtgLc"
+1 < x-envoy-upstream-service-time: 143
+{"uuid":"bd254d24-4785-4cbe-87c4-16af33514374"}
+
+15:20:36.463 [main] DEBUG com.intuit.karate - request:
+2 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/bd254d24-4785-4cbe-87c4-16af33514374
+2 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+15:20:36.589 [main] DEBUG com.intuit.karate - response time in milliseconds: 126
+2 < 404
+2 < Date: Tue, 20 Dec 2022 08:20:36 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 141
+2 < Connection: keep-alive
+2 < Server: nginx/1.17.10
+2 < x-powered-by: Express
+2 < etag: W/"8d-HP1io1DbVSxGq2/duARJWVJS6j8"
+2 < x-envoy-upstream-service-time: 8
+{"status":false,"error":{"code":404,"message":"not found","errors":[{"path":"/bd254d24-4785-4cbe-87c4-16af33514374","message":"not found"}]}}
+
+15:20:36.591 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:44
+And status 200
+status code was: 404, expected: 200, response time in milliseconds: 126, url: https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/bd254d24-4785-4cbe-87c4-16af33514374, response: 
+{"status":false,"error":{"code":404,"message":"not found","errors":[{"path":"/bd254d24-4785-4cbe-87c4-16af33514374","message":"not found"}]}}
+src/test/java/examples/users/acceptconsent.feature:44
+15:20:37.220 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:31:30.415 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:31:30.782 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:31:30.784 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525090783
+15:31:30.815 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10
+15:31:32.587 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:32.662 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:8
+* def uuid_res = response.uuid
+js failed:
+>>>>
+01: response.uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "response" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/acceptconsent.feature:8
+15:31:33.765 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:32:03.468 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:32:03.787 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:32:03.788 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525123788
+15:32:03.817 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10
+15:32:04.835 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:32:05.266 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 268
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"draft":{"financingRequirement":{"ownsBusiness":true,"businessEntityType":"INDIVIDUAL","referralCode":"","loanAmount":"undefined"},"personalDataConsent":true,"utm":{"utmSource":"","utmMedium":"","utmCampaign":"","utmTerm":"","utmContent":""}},"delete_previous":false}
+
+15:32:06.170 [main] DEBUG com.intuit.karate - response time in milliseconds: 900
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:32:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"2f-sks/2GEzl+hM7YcfWM0SoFgtgLc"
+1 < x-envoy-upstream-service-time: 363
+{"uuid":"bd254d24-4785-4cbe-87c4-16af33514374"}
+
+15:32:07.003 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:32:12.137 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:32:12.440 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:32:12.442 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525132441
+15:32:12.463 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 49
+15:32:13.296 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:32:13.358 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:51
+Given path '/ext/loan-draft/id/elevate/individual' + uuid_res
+js failed:
+>>>>
+01: '/ext/loan-draft/id/elevate/individual' + uuid_res
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uuid_res" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/acceptconsent.feature:51
+15:32:14.326 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:32:40.519 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:32:40.793 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:32:40.795 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525160794
+15:32:40.819 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10
+15:32:41.573 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:32:41.939 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 268
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"draft":{"financingRequirement":{"ownsBusiness":true,"businessEntityType":"INDIVIDUAL","referralCode":"","loanAmount":"undefined"},"personalDataConsent":true,"utm":{"utmSource":"","utmMedium":"","utmCampaign":"","utmTerm":"","utmContent":""}},"delete_previous":false}
+
+15:32:42.267 [main] DEBUG com.intuit.karate - response time in milliseconds: 325
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:32:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"2f-sks/2GEzl+hM7YcfWM0SoFgtgLc"
+1 < x-envoy-upstream-service-time: 66
+{"uuid":"bd254d24-4785-4cbe-87c4-16af33514374"}
+
+15:32:42.913 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:32:52.982 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:32:53.252 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:32:53.254 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525173253
+15:32:53.276 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 50
+15:32:54.130 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:32:54.192 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:8
+* def uuid_res = response.uuid
+js failed:
+>>>>
+01: response.uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "response" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/acceptconsent.feature:8
+15:32:54.893 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:33:24.771 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:33:25.162 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:33:25.165 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525205164
+15:33:26.237 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:26.299 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:8
+* def uuid_res = response.uuid
+js failed:
+>>>>
+01: response.uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "response" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/acceptconsent.feature:8
+15:33:26.308 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:33:26.313 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:8
+* def uuid_res = response.uuid
+js failed:
+>>>>
+01: response.uuid
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "response" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/acceptconsent.feature:8
+15:33:27.072 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:34:13.999 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:34:14.272 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:34:14.274 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525254273
+15:34:14.302 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 49
+15:34:15.404 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:34:15.700 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:34:17.450 [main] DEBUG com.intuit.karate - response time in milliseconds: 1744
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:34:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 244
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:34:18.116 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:36:48.531 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:36:48.847 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:36:48.849 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525408848
+15:36:48.879 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:36:50.271 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:36:50.564 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:36:50.990 [main] DEBUG com.intuit.karate - response time in milliseconds: 421
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:36:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 38
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:36:51.869 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:37:58.256 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:37:58.566 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:37:58.568 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525478567
+15:37:58.587 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:37:59.387 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:37:59.640 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:00.150 [main] DEBUG com.intuit.karate - response time in milliseconds: 504
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:38:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 195
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:38:00.205 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:59
+15:38:00.788 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:38:22.082 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:38:22.354 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:38:22.355 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525502355
+15:38:22.381 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:38:23.105 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:38:23.327 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:23.838 [main] DEBUG com.intuit.karate - response time in milliseconds: 509
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:38:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 60
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:38:23.893 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.personalDataConsent == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:59
+15:38:24.583 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:43:46.287 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:43:46.657 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:43:46.659 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525826659
+15:43:46.690 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:43:48.095 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:48.474 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:43:48.909 [main] DEBUG com.intuit.karate - response time in milliseconds: 431
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:43:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 46
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:43:49.844 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:44:25.611 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:44:25.877 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:44:25.878 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525865878
+15:44:25.905 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:44:26.675 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:44:26.922 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:44:27.259 [main] DEBUG com.intuit.karate - response time in milliseconds: 334
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:44:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 73
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:44:27.319 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:59
+15:44:27.932 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:44:43.322 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:44:43.548 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:44:43.549 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525883549
+15:44:43.567 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:44:44.282 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:44:44.519 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:44:46.049 [main] DEBUG com.intuit.karate - response time in milliseconds: 1526
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:44:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 40
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:44:46.103 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == 'true'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'true'
+
+src/test/java/examples/users/acceptconsent.feature:59
+15:44:46.727 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:46:12.735 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:46:13.024 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:46:13.027 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525973026
+15:46:13.052 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:46:13.813 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:14.071 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:46:14.511 [main] DEBUG com.intuit.karate - response time in milliseconds: 435
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:46:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 37
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:46:15.270 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:46:28.508 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:46:28.834 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:46:28.836 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671525988835
+15:46:28.866 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:46:29.733 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:29.985 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:46:30.303 [main] DEBUG com.intuit.karate - response time in milliseconds: 313
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:46:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 44
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:46:30.978 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:47:12.609 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:47:12.968 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:47:12.970 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671526032970
+15:47:13.002 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:47:14.614 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:14.907 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:47:15.533 [main] DEBUG com.intuit.karate - response time in milliseconds: 620
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:47:15 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 37
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:47:15.644 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:59
+15:47:16.771 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:50:35.566 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:50:35.856 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:50:35.858 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671526235857
+15:50:35.881 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:50:36.801 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:50:37.088 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:50:37.795 [main] DEBUG com.intuit.karate - response time in milliseconds: 703
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:50:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 48
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:50:37.857 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:61
+And match response.data[0].ownsBusiness == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:61
+15:50:38.698 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:50:55.529 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:50:55.853 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:50:55.854 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671526255854
+15:50:55.882 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:50:56.882 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:50:57.286 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:50:57.686 [main] DEBUG com.intuit.karate - response time in milliseconds: 398
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:50:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 51
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:50:57.762 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:63
+And match response.data[0].businessEntityType == '#string'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:63
+15:50:58.764 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:51:10.318 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:51:10.879 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:51:10.881 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671526270880
+15:51:10.911 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:51:12.330 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:51:12.763 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:51:13.221 [main] DEBUG com.intuit.karate - response time in milliseconds: 455
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:51:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 40
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:51:13.280 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:63
+And match response.data[0].businessEntityType == '#string'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:63
+15:51:14.120 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:51:42.066 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:51:42.334 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:51:42.336 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671526302335
+15:51:42.356 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:51:43.134 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:51:43.361 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:51:43.675 [main] DEBUG com.intuit.karate - response time in milliseconds: 309
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:51:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 38
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:51:43.731 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:64
+And match response.data[0].productId == '#number'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:64
+15:51:44.338 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:52:08.942 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:52:09.239 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:52:09.241 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671526329241
+15:52:09.265 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:52:10.033 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:52:10.302 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:52:10.715 [main] DEBUG com.intuit.karate - response time in milliseconds: 411
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:52:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 40
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:52:10.775 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:66
+And match response.data[0].uuid == '#uuid'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:66
+15:52:11.432 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+15:52:39.029 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+15:52:39.288 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:52:39.290 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671526359289
+15:52:39.308 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+15:52:40.070 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:52:40.340 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:52:41.755 [main] DEBUG com.intuit.karate - response time in milliseconds: 1410
+1 < 200
+1 < Date: Tue, 20 Dec 2022 08:52:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 42
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+15:52:42.585 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:08:22.912 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:08:23.254 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:08:23.255 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527303254
+16:08:23.279 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:08:24.546 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:08:24.841 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:08:26.476 [main] DEBUG com.intuit.karate - response time in milliseconds: 1632
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:08:26 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 40
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:08:26.562 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == true
+match failed: EQUALS
+  $ | actual path does not exist (STRING:BOOLEAN)
+  '#notpresent'
+  true
+
+src/test/java/examples/users/acceptconsent.feature:59
+16:08:27.437 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:09:04.596 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:09:04.865 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:09:04.866 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527344866
+16:09:04.884 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:09:05.630 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:05.866 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:09:06.188 [main] DEBUG com.intuit.karate - response time in milliseconds: 319
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:09:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 42
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:09:06.235 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:59
+16:09:06.881 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:10:43.751 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:10:44.017 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:10:44.018 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527444017
+16:10:44.039 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+16:10:44.850 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:10:45.077 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/sg
+1 > member-uuid: d2de472f-cfe7-4f31-b8df-93375832b1d9
+1 > username: mobile-user-d2de472f-cfe7-4f31-b8df-93375832b1d9@fundingsocieties.com
+1 > country-id: sg
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:10:45.998 [main] DEBUG com.intuit.karate - response time in milliseconds: 918
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:10:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1383
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"567-QqP+rmbkdr7xGxbnHDdzFQI1YQ8"
+1 < x-envoy-upstream-service-time: 313
+{"ui":{"lastVisitedTabId":"documents"},"data":{"utm":{},"company":{"uen":"12453657","bank":{"name":"Bank of China (Singapore)","accountNumber":"12345678"},"name":"name of comp","typeId":9,"documents":[{"id":"2934205","name":"BANK_STATEMENT_NIRC-ex.png","type":"BANK_STATEMENT","uuid":"9fd126f7-f70c-4d61-bd8b-223eb2e2f283"}],"annualRevenue":1000000,"businessIndustryId":27},"borrower":{"email":"qa+test.avatest@fundingsocieties.com","fullname":"ava tester","icNumber":"S3947271F","documents":[{"id":"2934205","name":"NRIC_FRONT_image (5).png","type":"NRIC_FRONT","uuid":"9fd126f7-f70c-4d61-bd8b-223eb2e2f283"},{"id":"2934207","name":"CBS_image (7).png","type":"CBS","uuid":"96d9e27f-cee4-467f-bc60-7c9ae85c780f"},{"id":"2934206","name":"NOA_image (6).png","type":"NOA","uuid":"32967e59-4d5b-4bea-b198-860f2b6f34fd"}],"isCitizen":true,"dateOfBirth":"1995-12-30"},"directors":[],"appliedTenor":5,"appliedAmount":100000,"submitConsent":true,"financingPurpose":"business-expansion","personalDataConsent":true,"consentToBeContactedThroughWhatsapp":true},"loan":{"amount":100000,"originationFee":5000,"retentionSum":0,"tenor":5,"interestRate":0,"interestType":30,"status":"PROCESS","loanCode":"SBMB-2212000003"},"productId":11,"notice":null,"uuid":"56f72743-b1f3-4ce5-8ecc-cb7e217c7c8e","status":"PROCESS","username":"mobile-user-d2de472f-cfe7-4f31-b8df-93375832b1d9@fundingsocieties.com"}
+
+16:10:46.585 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/loanget.feature
+16:12:13.613 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:12:13.883 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:12:13.884 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527533884
+16:12:13.905 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:12:14.659 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:12:14.899 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:15.370 [main] DEBUG com.intuit.karate - response time in milliseconds: 469
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:12:15 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 38
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:12:15.424 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:61
+And match response.data[0].ownsBusiness contains '#boolean'
+match failed: CONTAINS
+
+src/test/java/examples/users/acceptconsent.feature:61
+16:12:16.119 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:14:30.108 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:14:30.444 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:14:30.446 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527670445
+16:14:30.475 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:14:32.026 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:14:32.319 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:14:32.869 [main] DEBUG com.intuit.karate - response time in milliseconds: 545
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:14:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 39
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:14:32.985 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent contains true
+match failed: CONTAINS
+  $ | actual path does not exist (STRING:BOOLEAN)
+  '#notpresent'
+  true
+
+src/test/java/examples/users/acceptconsent.feature:59
+16:14:33.928 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:17:11.611 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:17:11.963 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:17:11.965 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527831964
+16:17:11.994 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:17:13.305 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:17:13.572 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:17:14.422 [main] DEBUG com.intuit.karate - response time in milliseconds: 846
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:17:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 41
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:17:14.500 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == "#? _ == 'true'"
+match failed: EQUALS
+  $ | evaluated to 'false' (STRING:STRING)
+  '#notpresent'
+  '#? _ == 'true''
+
+src/test/java/examples/users/acceptconsent.feature:59
+16:17:15.285 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:17:49.999 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:17:50.216 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:17:50.218 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527870217
+16:17:50.240 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:17:51.102 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:17:51.336 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:17:53.809 [main] DEBUG com.intuit.karate - response time in milliseconds: 2468
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:17:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 46
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:17:53.866 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == "#? _ == 'true' || _ == 'false'"
+match failed: EQUALS
+  $ | evaluated to 'false' (STRING:STRING)
+  '#notpresent'
+  '#? _ == 'true' || _ == 'false''
+
+src/test/java/examples/users/acceptconsent.feature:59
+16:17:54.508 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:18:28.905 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:18:29.171 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:18:29.172 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671527909172
+16:18:29.191 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:18:29.930 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:18:30.165 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:18:30.526 [main] DEBUG com.intuit.karate - response time in milliseconds: 358
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:18:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 95
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:18:30.587 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:61
+And match response.data[0].ownsBusiness == "#? _ == 'true' || _ == 'false'"
+match failed: EQUALS
+  $ | evaluated to 'false' (STRING:STRING)
+  '#notpresent'
+  '#? _ == 'true' || _ == 'false''
+
+src/test/java/examples/users/acceptconsent.feature:61
+16:18:31.223 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:21:11.142 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:21:11.462 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:21:11.465 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671528071464
+16:21:11.492 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:21:12.848 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:21:13.155 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:21:13.508 [main] DEBUG com.intuit.karate - response time in milliseconds: 350
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:21:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 40
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:21:13.622 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:61
+And match response.data[0].ownsBusiness == '#'true' || 'false''
+js failed:
+>>>>
+01: '#'true' || 'false''
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:3 Expected ; but found true
+'#'true' || 'false''
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1898)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:184)
+
+src/test/java/examples/users/acceptconsent.feature:61
+16:21:14.498 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:21:34.075 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:21:34.462 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:21:34.464 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671528094463
+16:21:34.496 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:21:35.831 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:21:36.135 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:21:36.472 [main] DEBUG com.intuit.karate - response time in milliseconds: 334
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:21:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 37
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:21:36.556 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:61
+And match response.data[0].ownsBusiness == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:61
+16:21:37.394 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:21:57.960 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:21:58.259 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:21:58.260 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671528118260
+16:21:58.282 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:21:59.021 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:21:59.275 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:21:59.972 [main] DEBUG com.intuit.karate - response time in milliseconds: 694
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:21:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 43
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:22:00.667 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:22:21.321 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:22:21.577 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:22:21.579 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671528141578
+16:22:21.605 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:22:22.431 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:22:22.667 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:22:22.979 [main] DEBUG com.intuit.karate - response time in milliseconds: 309
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:22:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 53
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:22:23.037 [main] ERROR com.intuit.karate - src/test/java/examples/users/acceptconsent.feature:59
+And match response.data[0].personalDataConsent == '#boolean'
+match failed: EQUALS
+
+src/test/java/examples/users/acceptconsent.feature:59
+16:22:23.683 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature
+16:22:32.073 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+16:22:32.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:22:32.345 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1671528152344
+16:22:32.365 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 48
+16:22:33.099 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:22:33.329 [main] DEBUG com.intuit.karate - request:
+1 > GET https://service-mesh-ingress-uat.fundingasiagroup.com/borrower-backend-service/ext/loan-draft/id/elevate/individual
+1 > username: salma.syahna@fundingsocieties.com
+1 > member-uuid: 5aec974b-74da-49c3-af07-4ec0776b979d
+1 > country-id: id
+1 > Host: service-mesh-ingress-uat.fundingasiagroup.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:22:33.711 [main] DEBUG com.intuit.karate - response time in milliseconds: 378
+1 < 200
+1 < Date: Tue, 20 Dec 2022 09:22:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 390
+1 < Connection: keep-alive
+1 < Server: nginx/1.17.10
+1 < x-powered-by: Express
+1 < etag: W/"186-pl/UY8H89F6fT8Fc1WR0ucWMH2Q"
+1 < x-envoy-upstream-service-time: 36
+{"ui":null,"data":{"utm":{"utmTerm":"","utmMedium":"","utmSource":"","utmContent":"","utmCampaign":""},"personalDataConsent":true,"financingRequirement":{"loanAmount":"undefined","ownsBusiness":true,"referralCode":"","businessEntityType":"INDIVIDUAL"}},"productId":203,"notice":null,"uuid":"bd254d24-4785-4cbe-87c4-16af33514374","status":null,"username":"salma.syahna@fundingsocieties.com"}
+
+16:22:34.802 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/acceptconsent.feature

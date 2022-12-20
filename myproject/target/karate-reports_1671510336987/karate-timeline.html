@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfiles[1:8]","start":1671510302340,"end":1671510302546,"title":"src\/test\/java\/examples\/users\/uploadfiles[1:8] 11:25:02.340-11:25:02.546 upload NIRC","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfiles[2:41]","start":1671510302554,"end":1671510302558,"title":"src\/test\/java\/examples\/users\/uploadfiles[2:41] 11:25:02.554-11:25:02.558 upload NOA","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfiles[3:73]","start":1671510302564,"end":1671510302567,"title":"src\/test\/java\/examples\/users\/uploadfiles[3:73] 11:25:02.564-11:25:02.567 upload CBS","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/users\/uploadfiles[4:106]","start":1671510302573,"end":1671510302576,"title":"src\/test\/java\/examples\/users\/uploadfiles[4:106] 11:25:02.573-11:25:02.576 upload bank statements","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

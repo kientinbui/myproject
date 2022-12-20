@@ -5,8 +5,9 @@ Feature: loan creation
     #* call read('classpath:examples/users/login.feature')
     * def username = 'salma.syahna@fundingsocieties.com'
     * def uuid = 'c8e3372b-204d-4fcb-bc13-bd36d9136254'
-    #* def doc_uuid = response.uuid
-    #* def id = response.dmsId
+    * call read('classpath:examples/users/uploadfiles.feature')
+    * def doc_uuid = response.uuid
+    * def id = response.dmsId
     #* call read('classpath:examples/users/loanget.feature')
 
   Scenario: update loan in financing requirements
@@ -16,7 +17,7 @@ Feature: loan creation
     Then header username = username
     Then header country-id = 'sg'
 
-      * def payload =
+    * def payload =
       """
         {
           "delete_previous": false,
@@ -43,7 +44,7 @@ Feature: loan creation
     Then header username = username
     Then header country-id = 'sg'
 
-      * def payload =
+    * def payload =
           """
             {
               "delete_previous": false,
@@ -70,31 +71,7 @@ Feature: loan creation
     And method put
     And status 200
 
-  Scenario: upload documents
-
-    Given path '/ext/documents'
-    Then header member-uuid = uuid
-    Then header username = username
-    Then header country-id = 'sg'
-    Then header Content-type = "multipart/form-data"
-
-    #* def path = read("/Users/salma.syahna/Desktop/myproject/src/test/java/examples/users/NIRC-ex.png")
-    #upload NIRC
-    And multipart file file = { read: 'NIRC-ex.png' }
-    And multipart field docType = 'NRIC_FRONT'
-    #upload NOA
-    #And multipart file file = { read: 'NIRC-ex.png' }
-    #And multipart field docType = 'NOA'
-    #upload CBS
-    #And multipart file file = { read: 'NIRC-ex.png' }
-    #And multipart field docType = 'CBS'
-
-    #And multipart file file = { read: 'NIRC-ex.png' }
-    #And multipart field docType = 'BANK_STATEMENT'
-
-    And method post
-    And status 200
-
+  ##run this endpoint to trying change payload response
   Scenario: update loan in applicant details
 
     Given path '/ext/loan-draft/sg'
@@ -102,7 +79,7 @@ Feature: loan creation
     Then header username = username
     Then header country-id = 'sg'
 
-      * def payload =
+    * def payload =
       """
         {
           "delete_previous": false,
@@ -151,6 +128,12 @@ Feature: loan creation
           "ui": { "lastVisitedTabId": "other-parties" }
         }
       """
+
+    * set payload.draft[0].appliedAmount = 10000
+    #* set payload.documents[0].uuid = doc_uuid
+    And request payload
+    And method put
+    And status 200
 
   Scenario: update loan in other parties
 
@@ -210,19 +193,19 @@ Feature: loan creation
       }
     """
 
-      And request payload
-      And method put
-      And status 200
+    And request payload
+    And method put
+    And status 200
 
-    Scenario: submit loan draft
+  Scenario: submit loan draft
 
-      Given path '/ext/loan-draft/submit/sg'
-      Then header member-uuid = uuid
-      Then header username = username
-      Then header country-id = 'sg'
+    Given path '/ext/loan-draft/submit/sg'
+    Then header member-uuid = uuid
+    Then header username = username
+    Then header country-id = 'sg'
 
 
-      * def payload =
+    * def payload =
         """
             {
               "utm": {},
@@ -280,12 +263,15 @@ Feature: loan creation
 
         """
 
-        And request payload
-        And method post
-        And status 200
+      * set payload.appliedTenor = 6
+      * set payload.uuid = doc_uuid
 
-      * call read('classpath:examples/users/loanget.feature')
-      * call read('classpath:examples/users/activeloan.feature')
+    And request payload
+    And method post
+    And status 200
+
+    * call read('classpath:examples/users/loanget.feature')
+    * call read('classpath:examples/users/activeloan.feature')
 
 
 

@@ -129,8 +129,8 @@ Feature: loan creation
         }
       """
 
-    * set payload.id = id
-    * set payload.uuid = doc_uuid
+    * set payload.draft[0].appliedAmount = 10000
+    #* set payload.documents[0].uuid = doc_uuid
     And request payload
     And method put
     And status 200
@@ -263,8 +263,8 @@ Feature: loan creation
 
         """
 
-    * set payload.appliedTenor = 6
-      #* set payload.uuid = doc_uuid
+      * set payload.appliedTenor = 6
+      * set payload.uuid = doc_uuid
 
     And request payload
     And method post
